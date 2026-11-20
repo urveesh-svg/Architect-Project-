@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #d6a437;
+  --color-background: #080808;
+  --color-surface: #151515;
+  --color-text: #ffffff;
+  --color-muted: #a5a5a5;
+  --container-width: 1400px;
+  --font-primary: Arial, sans-serif;
+  --transition: 0.3s ease;
+}

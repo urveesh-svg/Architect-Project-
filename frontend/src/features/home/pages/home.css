@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 85px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #080808;
+}
+
+.logo,
+.footer h2 {
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.logo span,
+.footer span {
+  color: #eebc32;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #eebc32;
+}
+
+.nav-btn {
+  text-decoration: none;
+  background: #eebc32;
+  color: black;
+  padding: 13px 22px;
+  font-weight: bold;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover,
+.primary-btn:hover {
+  background: white;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 650px;
+  padding: 110px 8% 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.95), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000")
+    center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-tag {
+  color: #eebc32;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.12;
+  font-weight: 900;
+}
+
+.hero h1 span {
+  color: #eebc32;
+}
+
+.hero-description {
+  max-width: 530px;
+  color: #ccc;
+  line-height: 1.8;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 16px 25px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #eebc32;
+  color: black;
+}
+
+.secondary-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Hero Statistics */
+
+.hero-bottom {
+  display: flex;
+  gap: 80px;
+  margin-top: 80px;
+}
+
+.hero-bottom h2 {
+  color: #eebc32;
+  font-size: 32px;
+}
+
+.hero-bottom p {
+  color: #ccc;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+/* Services */
+
+.services-section {
+  padding: 90px 8%;
+  background: #101010;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading p {
+  color: #eebc32;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.section-heading h2 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.section-heading span {
+  color: #eebc32;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  padding: 35px;
+  background: #191919;
+  border: 1px solid #292929;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #eebc32;
+}
+
+.service-icon {
+  color: #eebc32;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 45px 20px;
+  background: #050505;
+}
+
+.footer p {
+  color: #888;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    padding: 22px 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    padding: 80px 6% 35px;
+  }
+
+  .hero-bottom {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .hero-bottom h2 {
+    font-size: 25px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+}
